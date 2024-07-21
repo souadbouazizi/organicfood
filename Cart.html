@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Four saison</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="tob-bar  d-md-block d-none">
+      <div class="container mt-2">
+        <div class="row topbar-top py-3 px-3 text-white align-items-center">
+          <div class="col-md-6 d-flex">
+            <svg
+              class="me-2"
+              width="20px"
+              height="20px"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+            >
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                fill="#FFD43B"
+                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+              />
+            </svg>
+            111 street liberty Tunis 1000
+            <svg
+              class="me-2 ms-3"
+              width="20px"
+              height="20px"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                fill="#FFD43B"
+                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+              />
+            </svg>
+            <a
+              class="text-white text-decoration-none"
+              href="mailto:contact@organicfood.com"
+              >contact@organicfood.com</a
+            >
+          </div>
+          <div class="col-md-6 text-end">
+            <ul class="list-unstyled d-inline-flex">
+              <li class="list-item me-3">
+                <a class="text-white text-decoration-none" href="#"
+                  >Privacy Policy</a
+                >
+              </li>
+              /
+              <li class="list-item me-3 ms-3">
+                <a class="text-white text-decoration-none" href="#"
+                  >Terms of Use</a
+                >
+              </li>
+              /
+              <li class="list-item me-3 ms-3">
+                <a class="text-white text-decoration-none" href="#"
+                  >Sales and Refunds</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------navbar-------->
+    
+    <nav class="navbar navbar-expand-lg navbar-light align-items-center">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0 me-5">
+              <li class="nav-item">
+                <a class="nav-link px-4 active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="./shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="/shopdetail.html">Shop Detail</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link px-4 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./Cart.html">Cart</a></li>
+                  <li><a class="dropdown-item" href="./Chackout.html">Chackout</a></li>
+                  <li><a class="dropdown-item" href="./Testimonial.html">Testimonial</a></li>
+                  <li><a class="dropdown-item" href="./notfound.html">404 Page</a></li>              
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex justify-content-end">
+              <button class="btn btn-outline-success rounded-pill" 
+              type="button" 
+              data-bs-toggle="modal"
+              data-bs-target="#firstModal">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg></button>
+            </form>
+            <a href="#"><svg style="color: var(--second-color);" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag-fill ms-3" viewBox="0 0 16 16">
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
+              </svg></a>
+            
+             <a href="#"> <svg style="color: var(--second-color);" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill ms-3" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              </svg></a>
+          </div>
+        </div>
+      </div>
+      </nav>
+
+    <!----Modal---->
+
+<div class="modal fade justify-content-center" id="firstModal" tabindex="-1" >
+    <div class="modal-dialog modal-dialog-centered"
+    data-bs-keyboard="false"
+    data-bs-backdrop="static" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Search by keyword</h5>
+        <button
+          class="btn-close"
+          data-bs-dismiss="modal"
+          type="button" ></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="keywords" required >
+                <button class="btn btn-success" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </button>
+            </div>
+        </form>
+      </div>
+    </div>
+    </div>
+    </div>
+    
+
+<!---End modal---->
+<!----------End navbar-------->
+
+<div id="slide-show" class="carousel slide slide-page carousel-fade  overflow-hidden" data-bs-ride="carousel" style="height: 250px;">
+    <div class="carousel-indicators" >
+      <button class="active"
+      type="button"
+      data-bs-target="#slide-show"
+      data-bs-slide-to="0"
+      style="width: 12px; height: 12px; border-radius: 50%;"
+      >
+
+
+      </button>
+      <button class=""
+      type="button"
+      data-bs-target="#slide-show"
+      data-bs-slide-to="1"
+      style="width: 12px; height: 12px; border-radius: 50%;"
+      >
+      </button>
+    </button>
+    <button class=""
+    type="button"
+    data-bs-target="#slide-show"
+    data-bs-slide-to="2"
+    style="width: 12px; height: 12px; border-radius: 50%;"
+    >
+    </button>
+  </button>
+  <button class=""
+  type="button"
+  data-bs-target="#slide-show"
+  data-bs-slide-to="3"
+  style="width: 12px; height: 12px; border-radius: 50%;"
+  >
+  </button>
+    </div>
+      <div class="carousel-inner" style="height: 250px;">
+        <div class="carousel-item active"  style="height: 250px;">
+          <img class="d-block w-100" src="./images/car2.jpg" alt="">
+          <div class="carousel-caption d-none d-md-block mb-5">
+            <h5 class="fs-5 fw-bold">Cart</h5>
+            <div class="breadcrumb-holder">
+                <nav class="" style="--bs-breadcrumb-divider: '&rang;'">
+                  <ol
+                    class="breadcrumb text-bg-transparant d-inline-flex align-items-center p-2"
+                  >
+                    <li class="breadcrumb-item">
+                      <a class="smal text-decoration-none text-white fw-bold" href="./index.html"
+                        >Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a class="smal text-decoration-none text-white fw-bold" href="#"
+                        >Pages</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a class="smal text-decoration-none text-white fw-bold" href="./Cart.html"
+                        >Cart</a>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+
+          </div>
+        </div>
+        <div class="carousel-item"  style="height: 250px;">
+          <img class="d-block w-100" src="./images/car.jpg" alt="">
+          <div class="carousel-caption d-none d-md-block mb-5">
+            <h5 class="fs-5 fw-bold">Cart</h5>
+            <div class="breadcrumb-holder">
+              <nav class="" style="--bs-breadcrumb-divider: '&rang;'">
+                <ol
+                  class="breadcrumb text-bg-transparant d-inline-flex align-items-center p-2"
+                >
+                  <li class="breadcrumb-item">
+                    <a class="smal text-decoration-none text-white fw-bold" href="./index.html"
+                      >Home</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a class="smal text-decoration-none text-white fw-bold" href="#"
+                      >Pages</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a class="smal text-decoration-none text-white fw-bold" href="./Cart.html"
+                      >Cart</a>
+                  </li>
+                </ol>
+              </nav>
+              </div>
+          </div>
+        </div>
+        <div class="carousel-item"  style="height: 250px;">
+          <img class="d-block w-100" src="./images/car3.jpg" alt="">
+          <div class="carousel-caption d-none d-md-block mb-5">
+            <h5 class="fs-5 fw-bold">Cart</h5>
+            <div class="breadcrumb-holder">
+              <nav class="" style="--bs-breadcrumb-divider: '&rang;'">
+                <ol
+                  class="breadcrumb text-bg-transparant d-inline-flex align-items-center p-2"
+                >
+                  <li class="breadcrumb-item">
+                    <a class="smal text-decoration-none text-white fw-bold" href="./index.html"
+                      >Home</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a class="smal text-decoration-none text-white fw-bold" href="#"
+                      >Pages</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a class="smal text-decoration-none text-white fw-bold" href="./Cart.html"
+                      >Cart</a>
+                  </li>
+                </ol>
+              </nav>
+              </div>
+          </div>
+        </div>
+        <div class="carousel-item"  style="height: 250px;">
+          <img class="d-block w-100 img-fluid" src="./images/car1.jpg" alt="">
+          <div class="carousel-caption d-none d-md-block mb-5">
+            <h5 class="fs-5 fw-bold">Cart</h5>
+            <div class="breadcrumb-holder">
+              <nav class="" style="--bs-breadcrumb-divider: '&rang;'">
+                <ol
+                  class="breadcrumb text-bg-transparant d-inline-flex align-items-center p-2"
+                >
+                  <li class="breadcrumb-item">
+                    <a class="smal text-decoration-none text-white fw-bold" href="./index.html"
+                      >Home</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a class="smal text-decoration-none text-white fw-bold" href="#"
+                      >Pages</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a class="smal text-decoration-none text-white fw-bold" href="./Cart.html"
+                      >Cart</a>
+                  </li>
+                </ol>
+              </nav>
+              </div>
+
+          </div>
+        </div>
+      </div>
+      <button 
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#slide-show"
+      data-bs-slide="prev"
+      >
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">previous</span>
+    </button>
+    <button 
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#slide-show"
+    data-bs-slide="next"
+    >
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">next</span>
+  </button>
+
+    </div>
+  <!------end carousel-->
+
+<!-----table------->
+
+<div class="container mt-5">
+  <div class="table-responsive">
+  <table class="table">
+    <tr>
+      <th>
+        Products</th>
+      <th>Name</th>
+      <th>	Price</th>
+      <th>Quantity</th>
+      <th>	Total</th>
+      <th>Handle</th>
+     </tr>
+     <tr>
+ <tr>
+  <td>
+    <img src="./images/f1.jpg" class="img-fluid full-wudth" alt="" style="width: 100px;"></td>
+  <td>Limon</td>
+  <td>	5$</td>
+  <td>
+    <div class="input-group quantity mb-5" style="width: 100px;">
+      <div class="input-group-btn">
+          <button class="btn btn-sm btn-minus rounded-circle bg-warning border">
+            <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#000000" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
+          </button>
+      </div>
+      <input type="text" class="form-control form-control-sm text-center border-0" value="1">
+      <div class="input-group-btn">
+          <button class="btn btn-sm btn-plus rounded-circle bg-warning border">
+            <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#000000" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+          </button>
+      </div>
+  </div>
+  
+  </td>
+  <td>	200</td>
+  <td><button class="btn btn-md rounded-circle bg-warning border">
+    <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+      <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+      <path fill="#000000" d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+  </button></td>
+ </tr>
+ <tr>
+  <td>
+    <img src="./images/f3.jpg" class="img-fluid full-wudth" alt="" style="width: 100px;"></td>
+  <td>kewi</td>
+  <td>	5$</td>
+  <td>
+    <div class="input-group quantity mb-5" style="width: 100px;">
+      <div class="input-group-btn">
+          <button class="btn btn-sm btn-minus rounded-circle bg-warning border">
+            <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#000000" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
+          </button>
+      </div>
+      <input type="text" class="form-control form-control-sm text-center border-0" value="1">
+      <div class="input-group-btn">
+          <button class="btn btn-sm btn-plus rounded-circle bg-warning border">
+            <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#000000" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+          </button>
+      </div>
+  </div>
+  
+  </td>
+  <td>	200</td>
+  <td><button class="btn btn-md rounded-circle bg-warning border">
+    <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+      <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+      <path fill="#000000" d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+  </button></td>
+ </tr>
+ <tr>
+  <td>
+    <img src="./images/v5.jpg" class="img-fluid full-wudth" alt="" style="width: 100px;"></td>
+  <td>Tomatoes</td>
+  <td>	5$</td>
+  <td>
+    <div class="input-group quantity mb-5" style="width: 100px;">
+      <div class="input-group-btn">
+          <button class="btn btn-sm btn-minus rounded-circle bg-warning border">
+            <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#000000" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
+          </button>
+      </div>
+      <input type="text" class="form-control form-control-sm text-center border-0" value="1">
+      <div class="input-group-btn">
+          <button class="btn btn-sm btn-plus rounded-circle bg-warning border">
+            <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#000000" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+          </button>
+      </div>
+  </div>
+  
+  </td>
+  <td>	200</td>
+  <td><button class="btn btn-md rounded-circle bg-warning border">
+    <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+      <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+      <path fill="#000000" d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+  </button></td>
+ </tr>
+ <tr>
+  <td>
+    <img src="./images/v8.jpg" class="img-fluid full-wudth" alt="" style="width: 100px;"></td>
+  <td>Letus</td>
+  <td>	5$</td>
+  <td>
+    <div class="input-group quantity mb-5" style="width: 100px;">
+      <div class="input-group-btn">
+          <button class="btn btn-sm btn-minus rounded-circle bg-warning border">
+            <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#000000" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
+          </button>
+      </div>
+      <input type="text" class="form-control form-control-sm text-center border-0" value="1">
+      <div class="input-group-btn">
+          <button class="btn btn-sm btn-plus rounded-circle bg-warning border">
+            <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#000000" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+          </button>
+      </div>
+  </div>
+  
+  </td>
+  <td>	200</td>
+  <td><button class="btn btn-md rounded-circle bg-warning border">
+    <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+      <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+      <path fill="#000000" d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+  </button></td>
+ </tr>
+ <tr>
+  <td>
+    <img src="./images/b1.jpg" class="img-fluid full-wudth" alt="" style="width: 100px;"></td>
+  <td>Bread</td>
+  <td>	5$</td>
+  <td>
+    <div class="input-group quantity mb-5" style="width: 100px;">
+      <div class="input-group-btn">
+          <button class="btn btn-sm btn-minus rounded-circle bg-warning border">
+            <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#000000" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
+          </button>
+      </div>
+      <input type="text" class="form-control form-control-sm text-center border-0" value="1">
+      <div class="input-group-btn">
+          <button class="btn btn-sm btn-plus rounded-circle bg-warning border">
+            <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#000000" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+          </button>
+      </div>
+  </div>
+  
+  </td>
+  <td>	200</td>
+  <td><button class="btn btn-md rounded-circle bg-warning border">
+    <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+      <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+      <path fill="#000000" d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+  </button></td>
+ </tr>
+ <tr>
+  <td colspan="6">
+    <input type="text" placeholder="Coupon Codemt-5" required class="form-control">
+  </td>
+ </tr>
+ <tr>
+  <td colspan="6">
+    <button type="submit" class="btn btn-warning rounded-pill mt-2">Apply Coupon</button>
+  
+  </td>
+ </tr>
+  </table>
+</div>
+  <div class="row justify-content-end">
+    <div class="col-md-4">
+      <table class="table bg-light">
+        <tr>
+          <td colspan="2"><h3 class="fs-1 mt-3 mb-3">Cart Total</h3></td>
+        </tr>
+        <tr>
+          <td>Subtotal:</td>
+          <td> 2015$</td>
+        </tr>
+        <tr>
+          <td>Shipping</td>
+          <td> fate rate  3%</td>
+        </tr>
+        <tr>
+          <td>total</td>
+          <td> 3256$</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="text-end">
+            <button class="btn btn-warning rounded-pill text-white mt-5 mb-5">Proceed Checkout</button>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-----End table------->
+
+
+
+
+
+
+<div class="py-5 mt-2"></div>
+<!---------start footer--------->
+<footer class="footer mt-5 bg-secondary py-5 text-white">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-3">
+        <h1 class="text-white">Fruitables <br><span class="subtitle">Fresh products</span></h1>
+      </div>
+      <div class="col-md-6">
+        <form action="">
+          <div class="input-group rounded-pill mt-5 bg-white" style="border: 1px solid var(--hover-color);">
+            <input type="email" class="form-control border-0 ms-4 bg-transparent" placeholder="E-mail" required>
+            <button class="btn text-white rounded-pill py-3" style="background: var(--second-color);" type="submit" >Subscribe Now</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-3">
+        <ul class="list-unstyled d-flex mt-5 gap-3  justify-content-md-end">
+          <li><a href="#" class="link-social" >
+            <svg width="20px" height="20px" class="me-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f29f05" d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></a></li>
+          <li><a href="#" class="link-social" >
+             <svg width="20px" height="20px" class="me-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f29f05" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></a></li>
+          <li><a href="#" class="link-social" >
+            <svg width="20px" height="20px" class="me-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f29f05" d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a></li>
+          <li><a href="#" class="link-social" >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f29f05" d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg> </a></li>
+          </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="row justify-content-center align-items-center mt-3">
+      <div class="col-md-3">
+        <h3 class="fs-3 fw-bold text-white mb-2">Why People Like us!</h3>
+        <p class="text-white px-2 py-1 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima provident debitis illo voluptatem accusantium consequuntur aliquid impedit eos magnam maxime.</p>
+        <a href="#" class="btn btn-outline-warning text-white align-items-center d-table rounded-pill"> Read More</a>
+            
+      </div>
+      <div class="col-md-3">
+        <h3 class="fs-3 fw-bold text-white mb-2">Shop Info</h3>
+        <ul class="list-unstyled">
+          <li><a href="#" class="item-shop text-white">Link shop</a></li>
+          <li><a href="#" class="item-shop text-white">Link shop</a></li>
+          <li><a href="#" class="item-shop text-white">Link shop</a></li>
+          <li><a href="#" class="item-shop text-white">Link shop</a></li>
+          <li><a href="#" class="item-shop text-white">Link shop</a></li>
+          <li><a href="#" class="item-shop text-white">Link shop</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h3 class="fs-3 fw-bold text-white mb-2">Account</h3>
+        <ul class="list-unstyled">
+          <li><a href="#" class="item-footer text-white">Link Account</a></li>
+          <li><a href="#" class="item-footer text-white">Link Account</a></li>
+          <li><a href="#" class="item-footer text-white">Link Account</a></li>
+          <li><a href="#" class="item-footer text-white">Link Account</a></li>
+          <li><a href="#" class="item-footer text-white">Link Account</a></li>
+          <li><a href="#" class="item-footer text-white">Link Account</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h3 class="fs-3 fw-bold text-white mb-2">Contact</h3>
+        <span class="d-block">
+          Adress : Street liberty Tunis 1000
+        </span>
+        <span class="d-block">
+          Email:  <a href="mailto:Contact@organic-food.tn">Contact@organic-food.tn</a>
+        </span>
+        <span class="d-block">
+          Tel : <a href="tel:00 216 97 222 222"> 00 216 97 222 222</a>
+        </span>
+        <span class="d-block">
+          Payment Accepted
+        </span>
+        <span class="d-flex gap-2 mt-2">
+         <img src="./images/visa.png" class="img-fluid" alt="" style="width: 60px;">
+         <img src="./images/master.png" class="img-fluid" alt="" style="width: 60px;">
+         <img src="./images/maestro.png" class="img-fluid" alt="" style="width: 60px;">
+         <img src="./images/paypal.png" class="img-fluid" alt="" style="width: 60px;">
+        </span>
+      </div>
+    </div>
+    <div class="row justify-content-between mt-5">
+      <div class="col-md-6">
+        &copy;<span class="text-light"><a href="#">	 Organic food</a>, All right reserved.</span>
+      </div>
+      <div class="col-md-6 justify-content-md-end text-end">
+        <p>requested by <a href="alaaeldinalhallak.com">Alaa eldin Alhalak</a> produced by Souad Bouazizi</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--------End Footer---------->
+
+
+<a href="#" class="back-to-top position-fixed " style="right: 30px; bottom: 20px;"><svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#69a60d" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM385 231c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-71-71V376c0 13.3-10.7 24-24 24s-24-10.7-24-24V193.9l-71 71c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9L239 119c9.4-9.4 24.6-9.4 33.9 0L385 231z"/></svg></a>
+
+
+
+<!------------------>
+<!------------------>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".num").counterUp({
+          time: 1500,
+        });
+      });
+    </script>
+    <!-----Quantité ---->
+    <script>
+      $('.quantity button').on('click', function () {
+        var button = $(this);
+        var oldValue = button.parent().parent().find('input').val();
+        if (button.hasClass('btn-plus')) {
+            var newVal = parseFloat(oldValue) + 1;
+        } else {
+            if (oldValue > 0) {
+                var newVal = parseFloat(oldValue) - 1;
+            } else {
+                newVal = 0;
+            }
+        }
+        button.parent().parent().find('input').val(newVal);
+    });
+    </script>
+  </body>
+</html>

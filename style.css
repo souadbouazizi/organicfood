@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Pacifico&display=swap");
+
+:root {
+  --primary-font: "Lato", sans-serif;
+  --second-font: "Pacifico", cursive;
+  --primary-color: #666666;
+  --second-color: #69a60d;
+  --third-color: #c1d90b;
+  --hover-color: #f29f05;
+}
+.bg-first {
+  background: var(--primary-color);
+}
+.bg-second {
+  background: var(--second-color);
+}
+.bg-third {
+  background: var(--third-color);
+}
+.bg-hover {
+  background: var(--hover-color);
+}
+.text-first {
+  color: var(--primary-color);
+}
+.text-second {
+  color: var(--second-color);
+}
+.text-hover {
+  color: var(--hover-color);
+}
+
+body {
+  font-size: 0.9rem;
+  font-family: var(--primary-font);
+  letter-spacing: 2px;
+  color: var(--primary-color);
+  line-height: 1.5rem;
+}
+a{
+  color: var(--hover-color);
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--second-font);
+}
+
+.subtitle {
+  font-family: var(--primary-font);
+  display: block;
+  font-size: 20px;
+  letter-spacing: 10px;
+  font-weight: 400;
+  color: var(--hover-color);
+}
+
+.topbar-top {
+  background: var(--second-color);
+  border-radius: 8rem 3rem 8rem 3rem;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--hover-color);
+  border-radius: 50%;
+}
+
+.icon-services {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  line-height: 7px;
+  text-align: center;
+  background-color: var(--hover-color);
+  border-radius: 50%;
+  padding: 22px 0;
+}
+
+/* Add padding BETWEEN each column */
+.row > .column {
+  padding: 15px;
+  max-width: 10px 0;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  display: none; /* Hide all elements by default */
+}
+@media only screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn.avtive,
+.btn:hover {
+  background: var(--hover-color) !important;
+  color: white !important;
+}
+
+.photo-cat:hover img {
+  transform: scale(1.25);
+}
+
+.service-title {
+  display: table;
+  margin: -50px auto 0;
+  z-index: 2;
+}
+
+.link-social {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #f29f05;
+  border-radius: 50%;
+  line-height: 2px;
+  padding: 9px 6px;
+}
+
